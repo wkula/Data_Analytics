@@ -1,7 +1,7 @@
 data {
     real<lower=0> nu; // Deg of freedom
-    real mu;
-    real<lower=0> sigma;
+    real mu; //Location
+    real<lower=0> sigma; //Scale
 }
 
 parameters {

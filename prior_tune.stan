@@ -22,7 +22,7 @@ transformed data {
   int x_i[0];
 
   // Find gamma parameters that ensures 98% probabilty from 5 to 10
-  y = algebra_solver(tail_delta, y_guess, theta, x_r, x_i);
+  y = algebra_solver(tail_delta, y_guess, theta, x_r, x_i, 1e-10, 1e-3, 1e3); // last 3 parameters are tolerances, middle one was changed due to occuring error, not recomended solution but it works
 
   print("Alpha  = ", y[1]);
   print("Beta = ", y[2]);
